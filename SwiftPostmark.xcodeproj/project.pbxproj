@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5CD7F2B1EC75B870010EAE9 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD7F2A1EC75B870010EAE9 /* Response.swift */; };
+		B5CD7F2D1EC75D9E0010EAE9 /* SendMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD7F2C1EC75D9E0010EAE9 /* SendMessageResponse.swift */; };
+		B5CD7F2F1EC7632B0010EAE9 /* TestServerSendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD7F2E1EC7632B0010EAE9 /* TestServerSendTests.swift */; };
+		B5CD7F311EC765B90010EAE9 /* EndpointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD7F301EC765B90010EAE9 /* EndpointsTests.swift */; };
+		OBJ_24 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Address.swift */; };
+		OBJ_25 /* Bounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Bounce.swift */; };
+		OBJ_26 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Message.swift */; };
+		OBJ_27 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Server.swift */; };
+		OBJ_34 /* AddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* AddressTests.swift */; };
+		OBJ_36 /* SwiftPostmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* SwiftPostmark.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5CD7F291EC75A050010EAE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_19;
+			remoteInfo = SwiftPostmark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5CD7F2A1EC75B870010EAE9 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		B5CD7F2C1EC75D9E0010EAE9 /* SendMessageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageResponse.swift; sourceTree = "<group>"; };
+		B5CD7F2E1EC7632B0010EAE9 /* TestServerSendTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestServerSendTests.swift; sourceTree = "<group>"; };
+		B5CD7F301EC765B90010EAE9 /* EndpointsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointsTests.swift; sourceTree = "<group>"; };
+		OBJ_10 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		OBJ_11 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		OBJ_14 /* AddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTests.swift; sourceTree = "<group>"; };
+		OBJ_15 /* DerivedData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DerivedData; sourceTree = SOURCE_ROOT; };
+		OBJ_17 /* SwiftPostmark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftPostmark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_18 /* SwiftPostmarkTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftPostmarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_8 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Bounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounce.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_36 /* SwiftPostmark.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_12 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* SwiftPostmarkTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_13 /* SwiftPostmarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* AddressTests.swift */,
+				B5CD7F301EC765B90010EAE9 /* EndpointsTests.swift */,
+				B5CD7F2E1EC7632B0010EAE9 /* TestServerSendTests.swift */,
+			);
+			name = SwiftPostmarkTests;
+			path = Tests/SwiftPostmarkTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* SwiftPostmark.framework */,
+				OBJ_18 /* SwiftPostmarkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_12 /* Tests */,
+				OBJ_15 /* DerivedData */,
+				OBJ_16 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Address.swift */,
+				OBJ_9 /* Bounce.swift */,
+				OBJ_10 /* Message.swift */,
+				B5CD7F2C1EC75D9E0010EAE9 /* SendMessageResponse.swift */,
+				B5CD7F2A1EC75B870010EAE9 /* Response.swift */,
+				OBJ_11 /* Server.swift */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		OBJ_19 /* SwiftPostmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_20 /* Build configuration list for PBXNativeTarget "SwiftPostmark" */;
+			buildPhases = (
+				OBJ_23 /* Sources */,
+				OBJ_28 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftPostmark;
+			productName = SwiftPostmark;
+			productReference = OBJ_17 /* SwiftPostmark.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_29 /* SwiftPostmarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_30 /* Build configuration list for PBXNativeTarget "SwiftPostmarkTests" */;
+			buildPhases = (
+				OBJ_33 /* Sources */,
+				OBJ_35 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_37 /* PBXTargetDependency */,
+			);
+			name = SwiftPostmarkTests;
+			productName = SwiftPostmarkTests;
+			productReference = OBJ_18 /* SwiftPostmarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwiftPostmark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				OBJ_19 /* SwiftPostmark */,
+				OBJ_29 /* SwiftPostmarkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				B5CD7F2D1EC75D9E0010EAE9 /* SendMessageResponse.swift in Sources */,
+				OBJ_24 /* Address.swift in Sources */,
+				OBJ_25 /* Bounce.swift in Sources */,
+				OBJ_26 /* Message.swift in Sources */,
+				OBJ_27 /* Server.swift in Sources */,
+				B5CD7F2B1EC75B870010EAE9 /* Response.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				B5CD7F2F1EC7632B0010EAE9 /* TestServerSendTests.swift in Sources */,
+				B5CD7F311EC765B90010EAE9 /* EndpointsTests.swift in Sources */,
+				OBJ_34 /* AddressTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_19 /* SwiftPostmark */;
+			targetProxy = B5CD7F291EC75A050010EAE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftPostmark.xcodeproj/SwiftPostmark_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftPostmark;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = SwiftPostmark;
+			};
+			name = Debug;
+		};
+		OBJ_22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftPostmark.xcodeproj/SwiftPostmark_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftPostmark;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = SwiftPostmark;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftPostmark.xcodeproj/SwiftPostmarkTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = SwiftPostmarkTests;
+			};
+			name = Debug;
+		};
+		OBJ_32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftPostmark.xcodeproj/SwiftPostmarkTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = SwiftPostmarkTests;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "SwiftPostmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_20 /* Build configuration list for PBXNativeTarget "SwiftPostmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_21 /* Debug */,
+				OBJ_22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_30 /* Build configuration list for PBXNativeTarget "SwiftPostmarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_31 /* Debug */,
+				OBJ_32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
