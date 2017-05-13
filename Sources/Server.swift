@@ -48,7 +48,7 @@ open class Server {
 		request.addValue(token, forHTTPHeaderField: "X-Postmark-Server-Token")
 		let allMessages:[[String:Any]] = messages.map{$0.json}
 		request.httpBody = try? JSONSerialization.data(withJSONObject: allMessages, options: [])
-		
+		request.httpMethod = "POST"
 		return request
 	}
 
